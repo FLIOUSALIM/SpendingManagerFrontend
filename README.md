@@ -1,5 +1,16 @@
 # SpendingManagerFrontend
 
+The project is using [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+
+## Installing the development environment
+
+Open a terminal.
+Install **Angular CLI** globally: `npm install -g @angular/cli`.
+
+## Install the project
+
+Run the `npm install` command from the project directory.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
