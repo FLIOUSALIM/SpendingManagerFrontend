@@ -7,8 +7,15 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 
+/*Import Services */
+import { ExpenditureService } from './services/expediture/expenditure.service';
+import { HttpModule } from '@angular/http';
+
+
 /* Import Routes */
 import { ROUTES } from './app.routes';
+
+
 
 @NgModule({
   declarations: [
@@ -17,9 +24,12 @@ import { ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpModule,
   ],
-  providers: [],
+  providers: [
+    ExpenditureService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

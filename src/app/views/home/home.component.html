@@ -4,3 +4,23 @@
     <li class=""><a href="#">Dépenses</a></li>
   </div>
 </div>
+<div class="col-lg-6 table-responsive">
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Coût</th>
+        <th>Date</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expenditure of expenditures">
+        <td>{{expenditure.id}}</td>
+        <td>{{expenditure.cout}}</td>
+        <td>{{expenditure.date}}</td>
+        <td>{{expenditure.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
